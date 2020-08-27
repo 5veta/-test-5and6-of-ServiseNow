@@ -1,0 +1,48 @@
+@import '@servicenow/sass-kit/host';
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#incident-list{
+    margin: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1vw;
+    .item1 {
+        justify-content: center;
+        grid-column-start: 1; 
+        grid-column-end: 3;
+    }
+}
+$border: 1px solid #e6e6e6;
+.grid-modal{
+    margin: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2vw;
+    
+    .item1{
+        border-bottom: $border;
+    }
+    .item2{
+        border-bottom: $border;
+    }
+    .item3{
+        border-bottom: $border;
+    }
+    .item4{
+        border-bottom: $border;
+    }
+}
+
+#filter-panel{
+    margin: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1vw;
+    
+    now-dropdown{
+        margin: 1%;
+    }
+}
